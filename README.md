@@ -30,6 +30,12 @@ Single source of truth for SE Roofing's brand, marketing, and website design sys
 - [ ] Resolve the Bio-template font inconsistency — see `brand/typography/README.md`
 - [ ] Author `ai/brand-brief.md` once the playbook is in and the open items above are resolved
 
+## This is a work in progress — critique welcome
+
+The current marketing material is **not** the final word on the SE Roofing brand — it's what exists today, documented accurately. None of it is precious. If something here is inconsistent, dated, unclear, or could just be better (a tagline, a color pairing, a font choice, the messaging pillars, anything), that's a welcome finding, not an overstep — call it out and propose the fix. The `⚠️` flags already in `brand/typography/README.md` and `marketing/assets/README.md` are examples of this in practice, not one-off exceptions.
+
+This applies to AI tools working from this repo too (see [`ai/README.md`](ai/README.md)) — noticing a gap and suggesting a revision is exactly the kind of contribution this repo is for.
+
 ## Conventions
 
 - File names: lowercase, hyphen-separated (`se-logo-primary.svg`, not `SE Logo Final(2).svg`).
