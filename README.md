@@ -20,11 +20,15 @@ Single source of truth for SE Roofing's brand, marketing, and website design sys
 
 ## Status
 
-This repo is freshly scaffolded. Each folder has a `README.md` describing what belongs there and, where relevant, a placeholder to fill in. Known assets to add:
-
-- [ ] Standing SE logo file(s) → `brand/logos/`
-- [ ] Two existing marketing materials → `marketing/assets/`
-- [ ] Marketing playbook (if it exists as a doc) → `marketing/playbook/`
+- [x] Standing SE logo files (PNG + print-ready EPS, both color variants) → `brand/logos/`
+- [x] Brand colors — exact Pantone/CMYK + sampled digital hex → `brand/color/`
+- [x] Typography — confirmed typeface system + a flagged inconsistency to resolve → `brand/typography/`
+- [x] Messaging/voice — taglines, pillars, boilerplate pulled from real collateral + roofingse.com → `brand/voice-and-messaging/`
+- [x] Two marketing materials (Capabilities Statement, Gio Becerril bio) → `marketing/assets/`
+- [ ] Marketing playbook — not yet located/provided → `marketing/playbook/`
+- [ ] Decide whether to import the rest of the existing marketing library (proposal template, second bio, photos, video, folder artwork) — see `marketing/assets/README.md`
+- [ ] Resolve the Bio-template font inconsistency — see `brand/typography/README.md`
+- [ ] Author `ai/brand-brief.md` once the playbook is in and the open items above are resolved
 
 ## Conventions
 
