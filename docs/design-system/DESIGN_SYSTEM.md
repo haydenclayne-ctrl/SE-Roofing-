@@ -9,7 +9,7 @@ Machine-readable tokens: `tokens.json` and `tokens.css` in this folder. Inconsis
 
 ## 1. What this is, and what it is not
 
-- **This company** is SE Roofing Solutions (also appearing in public as SE Roofing Solutions LLC and, on the current marketing site, **Southeast Roofing Solutions**). The public name (SE vs. Southeast) is pending Hayden. It is a **commercial roofing subcontractor**, never a general contractor (per copy lead, pending Hayden confirmation). It works as an extension of the general contractor’s team, with in-house crews, on commercial, industrial, and government work. It is a **Roof Co Ventures operating company**.
+- **This company** is **SE Roofing** (public name, decided by Hayden on 24 November 2026). Use “SE Roofing Solutions LLC” only where the legal entity name is required. “Southeast Roofing Solutions” is retired and should not appear on public pages. It is a **commercial roofing subcontractor**, never a general contractor (per copy lead, pending Hayden confirmation). It works as an extension of the general contractor’s team, with in-house crews, on commercial, industrial, and government work. It is a **Roof Co Ventures operating company**.
 - **Canonical brand source:** `haydenclayne-ctrl/SE-Roofing-` — `brand/color`, `brand/typography`, `brand/logos`, `brand/voice-and-messaging`. The repo itself says the current material is documented accurately but “not the final word,” and invites critique. This proposal keeps that posture: it records what exists, and flags conflicts; it does not pick a new brand.
 - **Two-color brand.** The logo uses only SE Navy `#203A47` (PANTONE 7546 C) and SE Slate Blue `#456977` (PANTONE 5405 C), plus white. That pair is the brand. Roof Co gold and navy are a sibling identity, not this one.
 - **Not** Roof Co Ventures / Command chrome. Command already keeps a separate `seroofing` token namespace with the same navy and slate (and two Command-only extras). Document that relationship; do not merge the two brands. Do not put Roof Co gold `#D0A255` or Roof Co navy `#233746` / `#243746` on SE-only materials.
@@ -62,7 +62,9 @@ Do not use “contractor / subcontractor” or “commercial roofing contractor.
 
 **Finish or pull** from live pages: “66% Projects Completed,” “6+ Service Coverage,” and the gov site’s TBD UEI / CAGE / NAICS codes. Incomplete stats and placeholder registrations should not stay public.
 
-**Name and phone are pending Hayden.** The brand repo lists 281.965.9055; the marketing footer shows 713-814-5251; the gov site shows (281) 960-5459. Do not pick a phone or a public name (SE vs. Southeast) in this proposal.
+**Public name (decided 24 November 2026):** **SE Roofing.** Use “SE Roofing Solutions LLC” only where the legal entity name is required. “Southeast Roofing Solutions” is retired.
+
+**Official phone (decided 24 November 2026):** **713-814-5251**, everywhere, including the gov site. Retired numbers: 281.965.9055 (still in the brand repo, capabilities PDFs, and README) and (281) 960-5459 (still on seroofinggov.com). Swap those leftovers for 713-814-5251; do not leave both in circulation.
 
 **Taglines (as recorded 1 July 2026, inventory only):**
 
@@ -80,7 +82,7 @@ Do not use “contractor / subcontractor” or “commercial roofing contractor.
 
 **Boilerplate (short):** use the company description above. Do not reuse the older “commercial roofing contractor” boilerplate.
 
-**Contact facts as written in the brand repo:** phone 281.965.9055 · web roofingse.com · HQ 5617 Campbell Rd, Houston, Texas 77041. Live properties currently show **different** phone numbers (see `audit.md`). Leave the official phone and public name for Hayden; do not choose one in this proposal.
+**Contact facts:** official phone **713-814-5251** (decided 24 November 2026) · web roofingse.com · HQ 5617 Campbell Rd, Houston, Texas 77041. The brand repo, capabilities PDFs, and README still list the retired number 281.965.9055; seroofinggov.com still lists (281) 960-5459. Those leftovers should be updated to the official number (see `audit.md`).
 
 ---
 

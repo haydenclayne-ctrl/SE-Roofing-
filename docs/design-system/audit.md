@@ -33,7 +33,7 @@ The typography README already asked for a decision on the bios in July. The live
 
 `seroofingteam.com` is a Framer site whose `<link rel="canonical">` and `og:url` point at `https://www.roofingse.com`. This is Hayden’s SE Roofing site: Houston address, Roof Co Ventures in the copy, official lockup, the same service list. `roofingse.com` itself returned **HTTP 403** from this environment (curl, WebFetch, Playwright) on 24 November 2026, so the audit used the reachable host.
 
-The current look is photography-led, with a white-knockout SE emblem, a sticky white nav, **orange `#D4762C` primary buttons**, and a family of near-navy inks (`#16272F`, `#1A1A2E`, footer `#182B33`) that are **not** SE Navy `#203A47`. White type on the orange CTA is **3.27:1** and fails AA at the 15px button size. The hero headline is now “COMMERCIAL ROOFING. SELF PERFORMED.” — not the July-confirmed “COMMERCIAL ROOFING YOU CAN COUNT ON.” Footer copyright says “Southeast Roofing Solutions.” The “Who We Are” paragraph overflows at 1440 (“Backed by” is cut off). Mid-page sections are scroll-driven and do not appear in a naive full-page screenshot.
+The current look is photography-led, with a white-knockout SE emblem, a sticky white nav, **orange `#D4762C` primary buttons**, and a family of near-navy inks (`#16272F`, `#1A1A2E`, footer `#182B33`) that are **not** SE Navy `#203A47`. White type on the orange CTA is **3.27:1** and fails AA at the 15px button size. The hero headline is now “COMMERCIAL ROOFING. SELF PERFORMED.” — not the July-confirmed “COMMERCIAL ROOFING YOU CAN COUNT ON.” Footer copyright says “Southeast Roofing Solutions,” which is now retired (the public name is **SE Roofing**). The “Who We Are” paragraph overflows at 1440 (“Backed by” is cut off). Mid-page sections are scroll-driven and do not appear in a naive full-page screenshot.
 
 The website design-system folder in the brand repo is still an empty checklist, and the site source is not in this GitHub account.
 
@@ -49,18 +49,22 @@ Estimate Command (last push 10 July 2026) is SE-only and cites the same brand RE
 
 **REFINEMENT** — Keep Command’s SE namespace as the product implementation of this brand (navy/steel/mist). Do not use `steel-light` as body text. If Estimate Command is still alive, align its mute and status ramps with Command or document a deliberate SE-app exception; if it is retired, say so.
 
-### 4. Public facts disagree: name, domain, phone, tagline
+### 4. Public facts: name and phone are decided; domain and tagline are still open
 
-| Item | Brand repo (1 July 2026) | Live marketing (24 November) | Gov microsite | Other |
-|---|---|---|---|---|
-| Name | SE Roofing Solutions | “Southeast Roofing Solutions” in title and footer | SE ROOFING SOLUTIONS LLC | GAF listing: SE Roofing Solutions LLC |
-| Domain | roofingse.com | Canonical is roofingse.com; site is reachable at seroofingteam.com | seroofinggov.com | — |
-| Phone | 281.965.9055 | 713-814-5251 | (281) 960-5459 | Command team records also list other direct lines |
-| Primary line | “COMMERCIAL ROOFING YOU CAN COUNT ON” | “COMMERCIAL ROOFING. SELF PERFORMED.” | “BUILT BY ROOFERS, POWERED BY CREWS.” | — |
+Hayden confirmed on 24 November 2026 (via Z): the public name is **SE Roofing** (“SE Roofing Solutions LLC” only where legally required; “Southeast Roofing Solutions” is retired), and the official phone everywhere, including the gov site, is **713-814-5251**. The other numbers are retired.
+
+| Item | Official (24 Nov 2026, unless still open) | Still shipping |
+|---|---|---|
+| Name | **SE Roofing**. “SE Roofing Solutions LLC” only where legally required. “Southeast Roofing Solutions” is retired. | Marketing title and footer still say “Southeast Roofing Solutions.” Brand repo and gov site still use SE Roofing Solutions / SE ROOFING SOLUTIONS LLC in public-facing places. |
+| Phone | **713-814-5251** everywhere, including the gov site. 281.965.9055 and (281) 960-5459 are retired. | Brand repo, capabilities PDFs, and README still list 281.965.9055. seroofinggov.com still lists (281) 960-5459. The marketing footer already shows the official number. |
+| Domain | Still open. | roofingse.com is tagged as canonical but 403s from this environment; seroofingteam.com is what loads. Gov microsite: seroofinggov.com. |
+| Primary line | Still open. | “COMMERCIAL ROOFING YOU CAN COUNT ON” (July docs / Gio bio) · “COMMERCIAL ROOFING. SELF PERFORMED.” (current marketing hero) · “BUILT BY ROOFERS, POWERED BY CREWS.” (gov site). |
 
 `seroofinggov.com` is a stock USFCR template (Bootstrap blues, system/Lato typography, UEI/CAGE/NAICS still “TBD”). It uses the official lockup correctly and mentions Roof Co Ventures, but it is not the brand system.
 
-**BRANDING** — Confirm the public name, the canonical domain, the public phone, and which tagline leads. Then update the brand repo and the sites so they say the same thing. The name and phone are pending Hayden; this proposal does not pick a phone among the three numbers above.
+**BRANDING** — Confirm the canonical domain and which tagline leads. The public name and official phone are decided and are no longer open questions. The orange accent and the type systems also remain open (see findings 1 and 2).
+
+**REFINEMENT** — Swap the retired numbers on seroofinggov.com and in the capabilities PDFs and README for **713-814-5251**. Replace leftover “Southeast Roofing Solutions” on public pages with **SE Roofing**, and use “SE Roofing Solutions LLC” only on legal lines.
 
 **REFINEMENT** — Correct the written contrast note for slate (it passes AA at 5.93:1). Record or remove Minion Pro from the Capabilities Statement. Export a PNG/SVG of the diagonal lockup and a knockout mark. Import, or formally defer, the rest of the marketing library listed in `marketing/assets/README.md`. Fill or retire the empty `website/design-system/` checklist.
 
@@ -68,7 +72,7 @@ Estimate Command (last push 10 July 2026) is SE-only and cites the same brand RE
 
 Existing boilerplate still calls SE a “commercial roofing contractor” or “contractor / subcontractor.” SE is a **commercial roofing subcontractor**, never a general contractor (per copy lead, pending Hayden confirmation). The marketing site and July notes also lead, or can be read as leading, with unverified lines: “nationwide,” “Certified & Insured,” and “Guaranteed Results.”
 
-**REFINEMENT (copy)** — Use this positioning (per copy lead, pending Hayden confirmation): “SE Roofing is a commercial roofing subcontractor. We work as an extension of the general contractor’s team, with in-house crews and reliable execution on commercial, industrial, and government work.” Drop “contractor / subcontractor” and “commercial roofing contractor.” Do not lead with “nationwide,” “Certified & Insured,” or “Guaranteed Results” until they are verified. Finish or pull “66% Projects Completed,” “6+ Service Coverage,” and TBD UEI / CAGE / NAICS. Safer heroes: “COMMERCIAL ROOFING. SELF PERFORMED.” or “COMMERCIAL ROOFING YOU CAN COUNT ON.” Short partnership lines: “An extension of your team.” / “Your project. Our roofing expertise.” / “Built to support general contractors.” Leave the official phone and public name for Hayden.
+**REFINEMENT (copy)** — Use this positioning (per copy lead, pending Hayden confirmation): “SE Roofing is a commercial roofing subcontractor. We work as an extension of the general contractor’s team, with in-house crews and reliable execution on commercial, industrial, and government work.” Drop “contractor / subcontractor” and “commercial roofing contractor.” Do not lead with “nationwide,” “Certified & Insured,” or “Guaranteed Results” until they are verified. Finish or pull “66% Projects Completed,” “6+ Service Coverage,” and TBD UEI / CAGE / NAICS. Safer heroes: “COMMERCIAL ROOFING. SELF PERFORMED.” or “COMMERCIAL ROOFING YOU CAN COUNT ON.” Short partnership lines: “An extension of your team.” / “Your project. Our roofing expertise.” / “Built to support general contractors.” The public name (**SE Roofing**) and official phone (**713-814-5251**) are decided; leftover “Southeast” wording and retired numbers still need to be swapped (see finding 4).
 
 ---
 
@@ -78,8 +82,9 @@ Existing boilerplate still calls SE a “commercial roofing contractor” or “
 2. **BRANDING** — Reconcile the live marketing look with the two-color brand. Either restyle the Framer site to navy/slate (no orange, official navy ink, official faces) or formally approve a web-only system — and put a knockout logo in the brand repo. Do not let print, web, and bios drift as three identities.
 3. **REFINEMENT** — Keep Command’s `seroofing` navy/steel/mist as the product source for this brand; leave Roof Co gold out of SE materials. Align or retire Estimate Command, whose mute and status hexes disagree with Command and in several cases fail AA.
 4. **REFINEMENT** — Fix shipping quality on the public sites: orange/white contrast (3.27:1), the 1440 “Backed by” overflow, 403s on roofingse.com, unfinished project/video slots, and the gov template’s off-brand Bootstrap chrome. **Finish or pull** “66% Projects Completed,” “6+ Service Coverage,” and TBD UEI / CAGE / NAICS.
-5. **BRANDING** — Confirm the public identity: SE vs. Southeast, which domain and phone are official, and which tagline leads (“YOU CAN COUNT ON” vs. “SELF PERFORMED.” vs. “Built by roofers…”). The name and phone are pending Hayden; do not pick a phone in this proposal.
+5. **BRANDING** — Confirm the remaining public-identity questions: which domain is official, and which tagline leads (“YOU CAN COUNT ON” vs. “SELF PERFORMED.” vs. “Built by roofers…”). The public name and official phone are decided (SE Roofing; 713-814-5251). The orange accent and the type systems remain open (recommendations 1 and 2).
 6. **REFINEMENT (copy)** — Position SE as a commercial roofing subcontractor, never a GC (per copy lead, pending Hayden confirmation). Drop “contractor / subcontractor” and “commercial roofing contractor.” Do not lead with “nationwide,” “Certified & Insured,” or “Guaranteed Results” until verified. Finish or pull the unfinished stats and TBD registrations noted above.
+7. **REFINEMENT** — Swap the retired phone numbers on seroofinggov.com and in the capabilities PDFs and README for **713-814-5251**. Replace leftover “Southeast Roofing Solutions” on public pages with **SE Roofing** (“SE Roofing Solutions LLC” only where legally required).
 
 ---
 
@@ -87,7 +92,7 @@ Existing boilerplate still calls SE a “commercial roofing contractor” or “
 
 1. Is **Proxima Nova + Museo Sans 900** the only type system? If yes, should bios and the Framer site be brought in line (and licensed for web)? If the site’s Montserrat/Switzer look is intentional, should that be documented as a web-only system?
 2. The marketing site’s orange `#D4762C` and near-navy inks are not the two-color logo palette. Should the site return to SE Navy / Slate Blue, or is the current Framer look approved as a web exception?
-3. Which public identity is official: the name (SE Roofing Solutions vs. Southeast Roofing Solutions), the canonical domain (roofingse.com is tagged as canonical but 403s here; seroofingteam.com is what loads), the phone (the repo, the marketing footer, and the gov site all disagree — do not pick one in this proposal), and the lead tagline? The copy lead also asks Hayden to confirm SE’s positioning as a commercial roofing subcontractor (never a GC).
+3. Which canonical domain is official (roofingse.com is tagged as canonical but 403s here; seroofingteam.com is what loads), and which tagline leads (“YOU CAN COUNT ON” vs. “SELF PERFORMED.” vs. “Built by roofers…”)? The public name and official phone are decided (SE Roofing; 713-814-5251). The orange accent and the type systems remain open (questions 1 and 2). The copy lead also asks Hayden to confirm SE’s positioning as a commercial roofing subcontractor (never a GC).
 
 ---
 
