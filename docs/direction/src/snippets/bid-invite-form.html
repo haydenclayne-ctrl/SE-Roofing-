@@ -1,0 +1,15 @@
+<!-- PROPOSED contact.form extension (Z / Copy Humanizer to approve). Sits on a navy ground (.on-navy). Netlify Forms. -->
+<form class="form" name="bid-invite" method="POST" data-netlify="true" aria-label="Send project details">
+  <div class="field"><label for="nm">Name</label><input id="nm" name="name" autocomplete="name" required></div>
+  <div class="field"><label for="co">Company</label><input id="co" name="company" autocomplete="organization" required></div>
+  <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+  <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" autocomplete="tel"></div>
+  <div class="field full"><label for="pn">Project name <span class="req">(optional)</span></label><input id="pn" name="project"></div>
+  <div class="field"><label for="gc">General contractor <span class="req">(optional)</span></label><input id="gc" name="gc"></div>
+  <div class="field"><label for="bd">Bid due date <span class="req">(optional)</span></label><input id="bd" name="bid_date" type="date"></div>
+  <div class="field full"><label for="pl">Plans &amp; specs link <span class="req">(optional)</span></label><input id="pl" name="plans" type="url" inputmode="url" placeholder="https://"><div class="hint">BuildingConnected, Procore, Dropbox or any share link.</div></div>
+  <fieldset class="field full" style="border:0;padding:0;margin:0"><legend class="label" style="color:#fff;margin-bottom:8px">Roofing scope <span class="req">(optional)</span></legend>
+    <div class="checks"><label><input type="checkbox" name="scope" value="commercial">Commercial roofing</label><label><input type="checkbox" name="scope" value="new-construction">New construction</label><label><input type="checkbox" name="scope" value="overlay-restoration">Overlay and restoration</label><label><input type="checkbox" name="scope" value="tear-off">Tear-off and replacement</label></div></fieldset>
+  <div class="field full"><label for="msg">Message</label><textarea id="msg" name="message"></textarea></div>
+  <div class="field full"><button class="btn btn-primary" type="submit">Get in touch <span class="arr" aria-hidden="true">→</span></button></div>
+</form>

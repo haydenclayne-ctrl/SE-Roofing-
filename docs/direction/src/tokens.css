@@ -1,0 +1,54 @@
+/* SE Roofing tokens — PROPOSAL only, 2026-11-24, America/Chicago.
+   Extracted from haydenclayne-ctrl/SE-Roofing- (brand/color, typography, logos;
+   main @ a5951a3, 2026-07-01) and from related implementations:
+   Command seroofing namespace (PR #14 findings), estimate-command globals.css,
+   and the live Framer marketing site at seroofingteam.com (canonical tags point
+   at roofingse.com). Not owner-approved.
+   Prefix: --se-
+   Official brand tokens are the first two groups. Product and live-site
+   groups record what already ships; they are not approved brand additions.
+   Do not mix Roof Co gold/navy, HCC, Cotton Co, Foundation, Blackhorn,
+   Founders Ranch, or Rental One values into the official brand set. */
+
+:root {
+  /* ── Official brand (logo vectors + brand/color) ─────────────────── */
+  --se-navy: #203A47;            /* PANTONE 7546 C. Primary. "S" and ROOFING wordmark. 11.95:1 on white (AAA). */
+  --se-slate: #456977;           /* PANTONE 5405 C. SE Slate Blue. "E" bars, accent panels. 5.93:1 on white (AA body — the written guide's "large text only" note is too conservative). 2.01:1 on navy — never navy type on slate. */
+  --se-white: #FFFFFF;           /* Page grounds, reverse type */
+  --se-mist: #E7E9EA;            /* Light gray section ground from the Capabilities Statement. Approximate; not from a vector swatch. Command seroofing.mist and Estimate Command --color-line use this value. Navy on mist is 9.81:1. */
+
+  /* ── Type (confirmed print system) ───────────────────────────────── */
+  /* Proxima Nova + Museo Sans 900. Commercial; no webfont license confirmed;
+     no files in the repo. Bio docs use NewScience/Rajdhani instead — not these
+     tokens. The live marketing site currently ships Montserrat/Switzer. */
+  --se-font-family: "Proxima Nova", "Museo Sans", "Century Gothic", "Avenir Next", sans-serif;
+  --se-font-display: "Museo Sans", "Proxima Nova", "Century Gothic", "Avenir Next", sans-serif;
+
+  /* ── Command / Estimating seroofing extras (product, not print brand) */
+  --se-steel-light: #7E9BA7;     /* Command-only. 2.94:1 on white — not body text. 4.06:1 on navy — large-text AA only. */
+
+  /* ── Estimate Command extras (SE-only app; conflicts with Command) ─ */
+  --se-ec-bg: #F4F7F9;           /* App ground. Close to the live site's #F5F7F9; not Command's #F5F5F7. */
+  --se-ec-muted: #6D7D88;        /* 4.25:1 on white — fails AA at 14px. */
+  --se-ec-brand-soft: #E9EEF0;
+  --se-ec-success: #2F8A5B;      /* 4.28:1 on white — fails AA at 14px. Command good is #2F6F52 (5.97:1). */
+  --se-ec-success-soft: #E7F2EB;
+  --se-ec-warning: #B07A1E;      /* 3.72:1 on white — large-text only. Command warn is #9C6A1E (4.67:1). */
+  --se-ec-warning-soft: #F7EFE0;
+  --se-ec-danger: #C0504D;       /* 4.67:1 on white (AA). Command bad is #943B3B (7.12:1). */
+  --se-ec-danger-soft: #F7EBEB;
+  --se-ec-radius-card: 14px;
+
+  /* ── Live marketing site, observed 2026-11-24 on seroofingteam.com.
+        Not official brand colors. Recorded so the drift is explicit. ─ */
+  --se-web-ink: #16272F;         /* Header/on-light buttons, body-adjacent ink. Near, not equal to, SE Navy. 15.38:1 on white. */
+  --se-web-heading: #1A1A2E;     /* Section titles */
+  --se-web-footer: #182B33;      /* Footer field; nearby samples #1D2D35 / #1E343D */
+  --se-web-orange: #D4762C;      /* Primary CTA. White type is 3.27:1 — fails AA at the 15px button size. Black type would be 6.43:1. Not Roof Co gold. */
+  --se-web-ground: #F5F7F9;      /* Light section ground */
+  --se-web-consult: #EBFBFF;     /* "Request a Roofing Consultation" band */
+  --se-web-panel: #CADAE4;       /* "Delivered At Scale" light panel */
+  --se-web-eyebrow: #CCE6FF;     /* "OVERVIEW:" on dark service cards */
+  --se-web-font-ui: "Montserrat", "Inter", sans-serif;
+  --se-web-font-stat: "Switzer", "Montserrat", sans-serif;
+}
