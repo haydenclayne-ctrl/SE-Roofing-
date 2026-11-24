@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/tokens.web.css"><link rel="stylesheet" href="css/site.css"></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="mocknote">DESIGN MOCK · Direction A “Field Manual” · proposal, not approved · copy from COPY-DECK.md · interim web fonts Figtree + Outfit · hero photo from the current site, SE job provenance to be confirmed · striped labels are mock-only slots, never shipped</div>
 <header class="hdr">
   <div class="wrap">
     <a class="logo" href="/" aria-label="SE Roofing home"><img src="assets/img/se-roofing-full-lockup.png" alt="SE Roofing"></a>
@@ -12,11 +11,15 @@
       <a href="/capabilities">Capabilities</a><a href="/safety">Safety</a><a href="/about">About</a><a href="/contact">Contact</a>
     </nav>
     <a class="phone" href="tel:+17138145251">713-814-5251</a>
-    <button class="menu-btn" aria-controls="mnav" aria-expanded="false" onclick="var o=document.body.classList.toggle('menu-open');this.setAttribute('aria-expanded',o)">MENU</button>
-    <a class="btn btn-primary" href="/contact">Contact us <span class="arr" aria-hidden="true">→</span></a>
+    <a class="btn btn-primary hdr-cta" href="/contact">Invite us to bid <span class="arr" aria-hidden="true">→</span></a>
+    <button class="menu-btn" type="button" aria-controls="mnav" aria-expanded="false" aria-label="Open menu" onclick="var o=document.body.classList.toggle('menu-open');this.setAttribute('aria-expanded',o);this.setAttribute('aria-label',o?'Close menu':'Open menu')">
+      <svg class="i-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.25" stroke-linecap="square"/></svg>
+      <svg class="i-close" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.25" stroke-linecap="square"/></svg>
+    </button>
   </div>
   <nav id="mnav" class="mnav" aria-label="Mobile">
     <a href="/">Home</a><a href="/capabilities">Capabilities</a><a href="/capabilities#how-we-work">How we work</a><a href="/safety">Safety</a><a href="/about">About</a><a href="/contact">Contact</a>
+    <a class="btn btn-primary mcta" href="/contact">Invite us to bid <span class="arr" aria-hidden="true">→</span></a>
     <a class="mphone" href="tel:+17138145251">Call 713-814-5251</a>
   </nav>
 </header>
@@ -26,22 +29,21 @@
   <section class="hero" id="hero" aria-labelledby="h1">
     <div class="wrap"><div class="grid">
       <div class="hero-copy">
-        <span class="label">Commercial roofing subcontractor · Houston, Texas</span>
+        <span class="label">Commercial roofing subcontractor</span>
         <h1 id="h1">Your project. Our roofing expertise.</h1>
         <p class="lead">SE Roofing is a commercial roofing subcontractor. We work as an extension of the general contractor’s team.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="/contact">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-primary" href="/contact">Invite us to bid <span class="arr" aria-hidden="true">→</span></a>
           <a class="btn btn-ghost" href="tel:+17138145251">Call 713-814-5251</a>
         </div>
       </div>
-      <div class="hero-img imgslot"><img src="assets/img/crew-roof.jpg" alt="Roofing crew walking a membrane roof with a roll of material"><span class="imgcap">VERIFY: current-site photo · confirm SE job + approval</span></div>
+      <div class="hero-img"><img src="assets/img/crew-roof.jpg" alt="Roofing crew walking a membrane roof with a roll of material"></div>
     </div></div>
   </section>
   <div class="specbar" aria-label="At a glance"><div class="wrap">
     <div class="spec"><span class="label k">Role</span><span class="v">Commercial roofing subcontractor</span></div>
     <div class="spec"><span class="label k">We work with</span><span class="v">General contractors</span></div>
     <div class="spec"><span class="label k">Scopes</span><span class="v">Commercial · New construction · Restoration · Replacement</span></div>
-    <div class="spec"><span class="label k">Based in</span><span class="v">Houston, Texas</span></div>
   </div></div>
 
   <!-- home.who-we-are -->
@@ -52,11 +54,11 @@
         <div class="big">
           <h2 id="pos-h" class="quote">An extension of <em>your team.</em></h2>
           <p class="lead" style="margin-bottom:16px;color:var(--se-navy);font-weight:600">We plan, schedule, and install the roofing work as part of your project team.</p>
-          <p class="lead">SE Roofing is a commercial roofing subcontractor based in Houston. We take on the roofing scope and stay accountable for that work through closeout, so the general contractor can keep the rest of the project moving.</p>
+          <p class="lead">SE Roofing is a commercial roofing subcontractor. We take on the roofing scope and stay accountable for that work through closeout, so the general contractor can keep the rest of the project moving.</p>
         </div>
         <div class="side">
           <span class="label">SE Roofing</span>
-          <p style="margin-top:12px">5617 Campbell Rd<br>Houston, Texas 77041<br><a href="tel:+17138145251" style="font-weight:700;text-decoration:none">713-814-5251</a></p>
+          <p style="margin-top:12px"><a href="tel:+17138145251" style="font-weight:700;text-decoration:none;font-size:22px">713-814-5251</a></p>
           <a class="btn btn-ghost" href="/about">About SE Roofing</a>
         </div>
       </div>
@@ -99,7 +101,7 @@
         <p class="lead">Call 713-814-5251, or send the details and we will respond with a practical next step.</p>
       </div>
       <div class="hero-ctas" style="grid-column:9 / span 4;justify-content:flex-end">
-        <a class="btn btn-primary" href="/contact">Get in touch <span class="arr" aria-hidden="true">→</span></a>
+        <a class="btn btn-primary" href="/contact">Invite us to bid <span class="arr" aria-hidden="true">→</span></a>
         <a class="btn btn-ghost" href="tel:+17138145251">Call 713-814-5251</a>
       </div>
     </div></div>
@@ -115,12 +117,13 @@
       <div>
         <span class="label">Company</span>
         <a href="/capabilities">Capabilities</a><a href="/safety">Safety</a><a href="/about">About</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a>
-        <a href="#gov-microsite" data-config="governmentUrl">Government work ↗</a>
+        <a href="https://seroofinggov.com" data-config="governmentUrl" rel="noopener">Government work ↗</a>
       </div>
       <div>
         <span class="label">Contact</span>
-        <span style="display:block;padding:5px 0">SE Roofing<br>5617 Campbell Rd<br>Houston, Texas 77041</span>
+        <span style="display:block;padding:5px 0">SE Roofing</span>
         <a href="tel:+17138145251">713-814-5251</a>
+        <a href="/contact">Invite us to bid →</a>
       </div>
     </div>
     <div class="legal"><span>© 2026 SE Roofing Solutions LLC</span></div>

@@ -1,6 +1,6 @@
 # SE Roofing website: design direction (v1)
 
-24 Nov 2026, America/Chicago. Jeremy (Creative Designer). **Proposal for Z's sign-off.** Any branding change goes to Hayden via Ari. Nothing here is deployed, and no repo `main` was touched.
+**Status: Approved by Z, Nov 24 2026 (branding items still pending Hayden).** Direction A "Field Manual". Jeremy (Creative Designer), America/Chicago. Branding changes still go to Hayden via Ari. Nothing is deployed, and no repo `main` was touched.
 
 **Read with:** `research.md` (references and live-site inventory), `CLAUDE-DESIGN-BRIEF.md` (paste-ready build brief), `../COPY-DECK.md` (copy, owned by Z / Copy Humanizer), `../BUILD-PLAN.md` and `../TECH-DISCOVERY.md` (Website Developer).
 
@@ -10,22 +10,23 @@
 |---|---|
 | Hayden via Z | The public name is **SE Roofing**. **SE Roofing Solutions LLC** is used only where it's legally required (footer copyright per COPY-DECK, privacy). "Southeast Roofing Solutions" is retired. The one phone number is **713-814-5251**, everywhere. |
 | Z structure (1:02 PM) | Projects stays hidden until there are 3+ verified photo jobs. The case study is a **future template** only. No Blog, no Careers, no Manufacturer Partners band. How we work lives at `/capabilities#how-we-work`. |
-| COPY-DECK.md (Z) | All Home copy comes verbatim from the deck. Header nav is **Capabilities, Safety, About, Contact**. The header CTA is "Contact us". Government is a **footer cross-link only** (microsite href in config). "In-house crews" and "self-performed" are held. RoofCo appears only in the footer and in about.story. |
+| COPY-DECK.md (Z) | All Home copy comes verbatim from the deck, except for the HQ and city removals below. Header nav is **Capabilities, Safety, About, Contact**. Government is a **single footer link** to seroofinggov.com (href in config); there's no Government nav item and no `/government` page. "In-house crews" and "self-performed" are held. RoofCo appears only in the footer and in about.story. |
+| Z approval (1:14 PM) | Direction A approved. The main CTA is **"Invite us to bid"** everywhere (header button, hero primary, CTA bands, mobile menu, form submit). The secondary is always **"Call 713-814-5251"**. The contact form gets the optional bid-invite fields after the deck's five. **HQ is unconfirmed:** no address, city or "Based in" claim anywhere in the mocks or brief. The phone stays. The mobile header uses a 44px hamburger icon button. Build files carry no mock banner or verify labels. |
 | Still open (Hayden) | The orange accent, the web fonts, the domain. |
 
-> **Conflict for Z:** the 1:02 structure note listed Government (and "Contact/Bid") in the nav, but COPY-DECK says Government stays on the microsite, linked from the footer only, and the CTA reads "Contact us". **The mocks follow COPY-DECK** because it's the newer, more specific source. If Government comes back as a page, it slots in as the 5th nav item, between About and Contact, with no layout change.
+> **Resolved (Z, 1:14 PM):** nav follows COPY-DECK. Government is a footer link only.
 
 ## 1. Concepts
 
 ### A. "Field Manual" (recommended)
-A structured, technical layout that reads like a spec sheet. Each section opens on a 4px navy rule with a numbered slate label ("02 · How we work"). Hairline slate dividers separate the content. There's a fact strip under the hero (Role / We work with / Scopes / Based in). A single cut corner echoes the parallelogram frame in the logo, used on primary buttons and the hero photo. Grounds are white and light gray, and navy is used for emphasis bands. Photos support the copy instead of carrying the page.
+A structured, technical layout that reads like a spec sheet. Each section opens on a 4px navy rule with a numbered slate label ("02 · How we work"). Hairline slate dividers separate the content. There's a fact strip under the hero (Role / We work with / Scopes). A single cut corner echoes the parallelogram frame in the logo, used on primary buttons and the hero photo. Grounds are white and light gray, and navy is used for emphasis bands. Photos support the copy instead of carrying the page.
 
 ### B. "Jobsite Documentary"
 A full-bleed jobsite photo with very large white type over a navy gradient. It's photo-led and cinematic. See `concept-b-hero.html` and `screenshots/concept-b-hero-1440.png` / `-390.png`.
 
 ### Why A
 1. **It works with the photography we actually have.** B needs a library of verified, high-res SE job photos, and today only the box-truck shot is provably SE's. A holds up with one photo, or with none.
-2. **It fits the audience.** GC PMs, estimators and precon scan for facts: role, scope, who's accountable. A's labeled rules and spec strip put those facts first, which is the "calm, competent, proof-led" tone.
+2. **It fits the audience.** GC PMs, estimators and precon scan for facts: role, scope, who's accountable. A's labeled rules and fact strip put those facts first, which is the "calm, competent, proof-led" tone.
 3. **It's closer to the brand.** The print capabilities statement is navy and slate on white with short heads and a cut-corner frame. A is that system on the web. B's dark photo washes push the two-color palette into the background.
 4. **Contrast and robustness.** Type over photos (B) is hard to keep AA across crops. The B mock shows it: the headline collides with the truck's logo. A's text always sits on flat brand grounds.
 5. **It's easy to build as static HTML/CSS** on the existing tokens, which matches BUILD-PLAN.
@@ -40,9 +41,9 @@ A full-bleed jobsite photo with very large white type over a navy gradient. It's
 | Capabilities | `/capabilities` | hero → overview → 4 service blocks (`#commercial-roofing`, `#new-construction`, `#overlay-restoration`, `#tear-off-replacement`) → **`#how-we-work`** (full: body + 4 stages) → cta |
 | Safety | `/safety` | hero → body → (`safety.proof` omitted until EMR / program are verified) → cta |
 | About / Team | `/about` | hero → story → positioning → team (Gio bio template; others only if provided) → cta |
-| Contact | `/contact` | hero → contact block → form → FAQ (2 Qs) → cta |
+| Contact | `/contact` | hero → contact details (phone; no address until HQ is confirmed) → form (deck's 5 fields + optional bid details) → FAQ (2 Qs) → cta |
 | Privacy | `/privacy` | legal body |
-| Government | footer cross-link → microsite | No page in v1 (COPY-DECK) |
+| Government | footer link "Government work ↗" → https://seroofinggov.com | No nav item, no page in v1 (Z + COPY-DECK) |
 | Projects | **hidden** | Ships only with 3+ verified jobs with photos. Template: `mock-case-study-FUTURE-TEMPLATE.html` |
 
 **Roof systems** (TPO, PVC, EPDM, modified bitumen, metal) are the only list the current site names, on `/services/commercial-roofing`. COPY-DECK holds the systems table until ops confirms it, so there's no systems row in v1. The Capabilities layout has room for a chip row under the service blocks once ops confirms the list.
@@ -118,17 +119,17 @@ Rules:
 
 ## 6. Components
 
-- **Header (`site.header`):** a sticky white bar with a 1px bottom line. Color lockup at 26px tall (20px on phone, still ≥120px wide). Nav: Capabilities, Safety, About, Contact. The phone number (`tel:`) shows on desktop. **There's always a persistent primary CTA, "Contact us" → /contact** (navy, cut corner, nowrap). On tablet and phone the nav collapses to a 44×44 "MENU" button with `aria-expanded`. The drawer lists Home, Capabilities, How we work, Safety, About, Contact, then "Call 713-814-5251", with 48px rows. *Option for Z:* the label "Invite us to bid" fits the GC audience better than "Contact us". The deck currently says "Contact us", and the mock follows the deck.
+- **Header (`site.header`):** a sticky white bar with a 1px bottom line. Color lockup 26px tall (20px on phone, still ≥120px wide). **Desktop (>1100):** nav Capabilities, Safety, About, Contact, then the phone number (`tel:`), then the persistent primary button **"Invite us to bid" → /contact** (navy, cut corner, nowrap). **Tablet (721–1100):** the nav and phone hide, and the header shows the logo, the "Invite us to bid" button and a **44×44 hamburger icon button** (`aria-label` "Open menu" / "Close menu", `aria-expanded`, `aria-controls="mnav"`; the icon swaps to an X). **Phone (≤720):** logo + hamburger only. The CTA moves into the menu as a full-width primary button, because a compact "Invite us to bid" plus the logo and hamburger doesn't fit 390 without shrinking the logo below 120px. The hero primary is the first thing below the header anyway. **Menu drawer:** Home, Capabilities, How we work, Safety, About, Contact (48px rows), then the "Invite us to bid" button, then "Call 713-814-5251".
 - **Section head:** a 4px navy rule, then a 12-column row: label (01 · Name) in columns 1–3 and the H2 plus optional lead in columns 4–12.
-- **Hero:** copy in columns 1–6 (eyebrow, H1, lead, two buttons), photo in columns 7–12 with the cut corner at bottom-left (48px, 28px on phone), min height 540. A **fact strip** below it has a 4px navy top rule and four cells (label + value), 2×2 on phone.
+- **Hero:** copy in columns 1–6 (eyebrow "Commercial roofing subcontractor", H1, lead, then the buttons **"Invite us to bid"** (primary) and **"Call 713-814-5251"** (ghost)), photo in columns 7–12 with the cut corner at bottom-left (48px, 28px on phone), min height 540. A **3-cell fact strip** sits below it (Role / We work with / Scopes, columns 1fr 1fr 2fr) with a 4px navy top rule. On phone, Role and We work with share a row and Scopes spans full width.
 - **Stage bar (how we work teaser):** 4 cells, each a slate number (Outfit 36) plus a stage name (Figtree 700, 19px), with hairline separators. 2×2 on phone. The full version on Capabilities adds the deck's one-line description under each stage.
 - **Capability tile:** white with a 1px line border, 4px navy top, 24px padding. Label "Scope 0N", H3, body (16px, ink-2), then "View scope →". On hover, the border and top switch to slate. The whole card is the link. Grid is 4 / 2 / 1.
 - **Project card (future):** a 4:3 photo, a market eyebrow, an H3 project name, and a definition list (Location / System / GC). The whole card is the link. No card ships without a verified job.
 - **Stat block (future, conditional):** an Outfit 56 figure, an uppercase label, and a source line ("From [document], [date]"). It ships only with 2+ verified figures. The intended first use is EMR on /safety. It isn't on Home (COPY-DECK: no `home.stats`).
 - **Buttons:** 48px min height (44 in the header on phone), 700, 15px, uppercase, +0.06em. Primary is a navy fill with a 14px cut corner. Ghost is a 2px navy outline. On navy grounds they invert (white fill with navy text, or white outline). The focus ring is 3px slate, or white on navy, with 3px offset.
-- **CTA band (`home.cta`, reused on every page):** a navy band with an H2 and lead in columns 1–7 and two buttons ("Get in touch", "Call 713-814-5251") right-aligned in columns 9–12. They stack full width on phone.
-- **Form (`contact.form`):** labels above fields (13px uppercase, 700), 48px inputs with square corners, a 2px border and a 3px focus ring. Errors are inline text plus an icon, never color alone. Submit is the primary button, full width on phone. COPY-DECK fields: Name, Phone, Company, Email, Message, with submit "Get in touch". *Proposed for Z / Copy:* add optional **Project name, General contractor, Bid due date, Plans & specs link (URL), Roofing scope** (checkbox chips), so an estimator can send a bid invite in one pass. Ready-made markup is in `src/snippets/bid-invite-form.html` (it uses the same `.form` / `.field` / `.checks` CSS already in `site.css`). Netlify Forms `name="bid-invite"`.
-- **Footer (`site.footer`):** SE Navy ground. The **white knockout lockup** (`../brand/se-lockup-white.svg`, 28px tall). The RoofCo line. Nav: Capabilities, Safety, About, Contact, Privacy, and "Government work ↗" (href from config). The contact block. "© 2026 SE Roofing Solutions LLC".
+- **CTA band (`home.cta`, reused on every page):** a navy band with an H2 and lead in columns 1–7 and two buttons (**"Invite us to bid"**, white fill; **"Call 713-814-5251"**, white outline) right-aligned in columns 9–12. They stack full width on phone.
+- **Form (`contact.form`, approved by Z):** labels above fields (13px uppercase, 700), 48px inputs with square corners, a 2px border and a 3px focus ring. Errors are inline text plus an icon, never color alone. Field order: the deck's five, **Name\* · Phone · Company · Email\* · Message**, then a **"Bid details (all optional)"** fieldset with **Project name · General contractor · Bid due date (date) · Plans & specs link (url, hint "BuildingConnected, Procore, Dropbox or any share link.") · Roofing scope** (checkbox chips for the four services). The submit is **"Invite us to bid"**, full width on phone. Netlify Forms `name="bid-invite"` with a honeypot. Markup: `src/snippets/bid-invite-form.html`. (\* Required fields are my proposal; the deck doesn't specify any.)
+- **Footer (`site.footer`):** SE Navy ground. The **white knockout lockup** (`../brand/se-lockup-white.svg`, 28px tall). The RoofCo line. Company: Capabilities, Safety, About, Contact, Privacy, and **"Government work ↗" → https://seroofinggov.com** (the only government link). Contact: "SE Roofing", 713-814-5251, "Invite us to bid →". **No street address or city** until HQ is confirmed. "© 2026 SE Roofing Solutions LLC".
 
 ## 7. Imagery
 
@@ -137,6 +138,12 @@ Rules:
 - Preferred shots: crews at work at mid distance (PPE visible, faces not posed), finished roofs wide (RTUs, terminations, clean lines), detail shots (seams, flashing, edge metal), and the branded truck or equipment on site.
 - Treatment: natural color, no filters or duotone, no text on photos. One cut corner per photo, max. 4:3 for cards, about 21:9 for case-study heroes, about 1:1.05 for the home hero.
 - Requested shoot list for Hayden/ops: 3 completed roofs (wide + detail), 2 crews in progress, the truck and equipment staging, and a team portrait for About.
+
+### Photo provenance (kept here, not in the build files)
+- `crew-roof.jpg` (home hero) comes from the current site's /projects page (card "Sheridan, AR"). **It's unverified as an SE job.** Confirm it's SE's and approved, or swap in an approved photo, before launch.
+- `truck.jpg` (Concept B) shows the SE logo on the truck, so it's SE equipment, but usage approval is still needed.
+- The other current-site photos (`tpo-roof`, `crew-insulation`, `crew-board`, `gravel-roof`) are tied to placeholder project slugs. Don't use them until they're verified.
+- Build files (`static/`, `mock-home.html`, the brief) carry **no** banner or verify labels. This list is the record.
 
 ## 8. Motion
 Minimal. 150–300ms ease-out on hover color and border changes, and a 1.02 image scale on card hover. No scroll-jacking, parallax, autoplay video, counters or marquees. The live site's scroll-driven sections are dropped. Everything is disabled under `prefers-reduced-motion` (already in CSS).
@@ -150,9 +157,9 @@ Minimal. 150–300ms ease-out on hover color and border changes, and a 1.02 imag
 - No content on hover only. Text resizes to 200% without loss. No horizontal scroll at 320px (checked to 390: scrollWidth = viewport).
 
 ## 10. Mobile behavior (≤720)
-- The header becomes logo + MENU + "Contact us" (no arrow). The drawer pushes down under the header with 48px rows and the phone number last.
+- The header becomes logo + a 44px hamburger icon button. "Invite us to bid" moves into the drawer as a full-width primary button above the phone row. The drawer pushes down under the header with 48px rows.
 - The hero stacks: eyebrow, H1 (42), lead, two full-width buttons, then the photo (4:3).
-- The fact strip goes 2×2. Section heads stack (label above heading).
+- The fact strip becomes Role | We work with on one row, with Scopes full width below. Section heads stack (label above heading).
 - The stage bar goes 2×2. Capability tiles become 1 column with no min height.
 - The CTA band buttons go full width. The footer becomes a single column.
 - The Phone link is a primary path on mobile (hero secondary CTA, CTA band, drawer, footer).
@@ -169,6 +176,7 @@ Minimal. 150–300ms ease-out on hover color and border changes, and a 1.02 imag
 3. **Domain:** which canonical host goes on the new site (roofingse.com, seroofingteam.com, or another)?
 4. **Reversed logo:** approve white-knockout use of the lockup on navy and dark photos. `../brand/se-lockup-white.svg` is a derived recolor of the official EPS, and the guidelines don't explicitly approve reversed use.
 5. **Photography:** confirm which current-site photos are SE jobs, and approve a short shoot (§7).
+6. **HQ (business fact, not branding):** confirm the public address. Until then, no address or city appears on the site. It goes back in `site.contact-block` once it's confirmed.
 
 ## 13. Live-site defects to retire (FYI for the build)
 - The **Careers footer link returns a 404** (`/careers`). It's cut from v1.
@@ -185,11 +193,11 @@ Minimal. 150–300ms ease-out on hover color and border changes, and a 1.02 imag
 | `direction/direction.md` | This doc |
 | `direction/research.md` | References + live-site inventory |
 | `direction/static/index.html` | **Home mock, static HTML** linking `css/tokens.css` (the design-system tokens, unchanged) + `css/tokens.web.css` (web tokens, incl. the headline-case decision) + `css/site.css` |
-| `direction/static/case-study-template.html` | Future case-study template (not in nav) |
+| `direction/templates/case-study-template.html` | Future case-study template (not in the v1 build; keeps its slot labels) |
 | `direction/mock-home.html` | The same Home as a single self-contained file (fonts and images inlined) |
 | `direction/mock-case-study-FUTURE-TEMPLATE.html` | Self-contained future template |
 | `direction/concept-b-hero.html` | Concept B comparison hero |
-| `direction/screenshots/` | `home-1440-viewport.png`, `home-1440-full.png`, `home-390-viewport.png`, `home-390-full.png`, `home-390-menu-open.png`, `home-1440-BRANDING-orange-accent*.png`, `concept-b-hero-1440.png` / `-390.png`, `case-study-FUTURE-TEMPLATE-1440-full.png` / `-390-full.png` |
+| `direction/screenshots/` | `home-1440-viewport.png`, `home-1440-full.png`, `home-390-viewport.png`, `home-390-full.png`, `home-390-menu-open.png`, `home-1024-menu-open.png` (1440 has no menu; the nav is inline), `home-1440-BRANDING-orange-accent.png` / `-cta.png`, `concept-b-hero-1440.png` / `-390.png`, `case-study-FUTURE-TEMPLATE-1440-full.png` / `-390-full.png` |
 | `direction/src/` + `direction/build.py` | Sources. `python3 build.py` regenerates both the static and the bundled mocks |
 | `brand/se-lockup-white.svg`, `@2x.png`, `@4x.png`, `README.md` | White knockout (derived, pending Hayden) |
 | `direction/research-shots/`, `direction/site-images/` | Reference screenshots and the original live-site images |

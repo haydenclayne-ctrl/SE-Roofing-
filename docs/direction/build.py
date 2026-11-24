@@ -4,7 +4,7 @@ D=os.path.dirname(os.path.abspath(__file__)); S=D+'/src'; A=D+'/assets'; LOGO=D+
 rd=lambda p:open(p).read()
 tokens=rd(S+'/tokens.css'); web=rd(S+'/tokens.web.css'); css=rd(S+'/site.css'); fonts=rd(A+'/fonts-embed.css')
 hdr=rd(S+'/_header.html'); ftr=rd(S+'/_footer.html')
-pages=[('home','mock-home.html','index.html'),('case-study','mock-case-study-FUTURE-TEMPLATE.html','case-study-template.html'),('concept-b-hero','concept-b-hero.html',None)]
+pages=[('home','mock-home.html','index.html'),('case-study','mock-case-study-FUTURE-TEMPLATE.html','../templates/case-study-template.html'),('concept-b-hero','concept-b-hero.html',None)]
 def b64(path,mt): return 'data:%s;base64,%s'%(mt,base64.b64encode(open(path,'rb').read()).decode())
 def fill(h): return h.replace('{{header}}',hdr).replace('{{footer}}',ftr)
 # 1) bundled
@@ -36,5 +36,8 @@ for src,_,out in pages:
     h=fill(rd(S+'/%s.html'%src)).replace('<style>{{fonts}}{{css}}</style>',links.replace('</style>','',1)[:-7])
     h=h.replace('{{logo-white}}','assets/logo/se-lockup-white.svg')
     h=re.sub(r'\{\{img:([^}]+)\}\}',r'assets/img/\1',h)
+    if out.startswith('../'):
+        h=h.replace('href="css/','href="../static/css/').replace('assets/img/','../static/assets/img/').replace('assets/logo/','../static/assets/logo/')
+        os.makedirs(os.path.dirname(T+'/'+out),exist_ok=True)
     open(T+'/'+out,'w').write(h)
 print('static ok', os.listdir(T))

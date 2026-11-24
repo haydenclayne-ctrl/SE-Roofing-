@@ -1,5 +1,4 @@
 <a class="skip" href="#main">Skip to content</a>
-<div class="mocknote">DESIGN MOCK · Direction A “Field Manual” · proposal, not approved · copy from COPY-DECK.md · interim web fonts Figtree + Outfit · hero photo from the current site, SE job provenance to be confirmed · striped labels are mock-only slots, never shipped</div>
 <header class="hdr">
   <div class="wrap">
     <a class="logo" href="/" aria-label="SE Roofing home"><img src="{{img:se-roofing-full-lockup.png}}" alt="SE Roofing"></a>
@@ -7,11 +6,15 @@
       <a href="/capabilities">Capabilities</a><a href="/safety">Safety</a><a href="/about">About</a><a href="/contact">Contact</a>
     </nav>
     <a class="phone" href="tel:+17138145251">713-814-5251</a>
-    <button class="menu-btn" aria-controls="mnav" aria-expanded="false" onclick="var o=document.body.classList.toggle('menu-open');this.setAttribute('aria-expanded',o)">MENU</button>
-    <a class="btn btn-primary" href="/contact">Contact us <span class="arr" aria-hidden="true">→</span></a>
+    <a class="btn btn-primary hdr-cta" href="/contact">Invite us to bid <span class="arr" aria-hidden="true">→</span></a>
+    <button class="menu-btn" type="button" aria-controls="mnav" aria-expanded="false" aria-label="Open menu" onclick="var o=document.body.classList.toggle('menu-open');this.setAttribute('aria-expanded',o);this.setAttribute('aria-label',o?'Close menu':'Open menu')">
+      <svg class="i-open" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2.25" stroke-linecap="square"/></svg>
+      <svg class="i-close" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2.25" stroke-linecap="square"/></svg>
+    </button>
   </div>
   <nav id="mnav" class="mnav" aria-label="Mobile">
     <a href="/">Home</a><a href="/capabilities">Capabilities</a><a href="/capabilities#how-we-work">How we work</a><a href="/safety">Safety</a><a href="/about">About</a><a href="/contact">Contact</a>
+    <a class="btn btn-primary mcta" href="/contact">Invite us to bid <span class="arr" aria-hidden="true">→</span></a>
     <a class="mphone" href="tel:+17138145251">Call 713-814-5251</a>
   </nav>
 </header>
