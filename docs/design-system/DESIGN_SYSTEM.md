@@ -9,7 +9,7 @@ Machine-readable tokens: `tokens.json` and `tokens.css` in this folder. Inconsis
 
 ## 1. What this is, and what it is not
 
-- **This company** is SE Roofing Solutions (also appearing in public as SE Roofing Solutions LLC and, on the current marketing site, **Southeast Roofing Solutions**). It is a commercial roofing contractor / subcontractor serving general contractors, restoration companies, and commercial, industrial, government, education, and healthcare work. It is a **Roof Co Ventures operating company**.
+- **This company** is SE Roofing Solutions (also appearing in public as SE Roofing Solutions LLC and, on the current marketing site, **Southeast Roofing Solutions**). The public name (SE vs. Southeast) is pending Hayden. It is a **commercial roofing subcontractor**, never a general contractor (per copy lead, pending Hayden confirmation). It works as an extension of the general contractor’s team, with in-house crews, on commercial, industrial, and government work. It is a **Roof Co Ventures operating company**.
 - **Canonical brand source:** `haydenclayne-ctrl/SE-Roofing-` — `brand/color`, `brand/typography`, `brand/logos`, `brand/voice-and-messaging`. The repo itself says the current material is documented accurately but “not the final word,” and invites critique. This proposal keeps that posture: it records what exists, and flags conflicts; it does not pick a new brand.
 - **Two-color brand.** The logo uses only SE Navy `#203A47` (PANTONE 7546 C) and SE Slate Blue `#456977` (PANTONE 5405 C), plus white. That pair is the brand. Roof Co gold and navy are a sibling identity, not this one.
 - **Not** Roof Co Ventures / Command chrome. Command already keeps a separate `seroofing` token namespace with the same navy and slate (and two Command-only extras). Document that relationship; do not merge the two brands. Do not put Roof Co gold `#D0A255` or Roof Co navy `#233746` / `#243746` on SE-only materials.
@@ -40,13 +40,31 @@ The website design-system folder in this repo is still an empty checklist. There
 
 ## 3. Brand direction
 
-SE Roofing should feel like a **direct, execution-focused, operator-owned commercial roofer**. Copy leads with capability and control: in-house crews, self-performed work, standardized practices, safety, responsiveness, national reach with a Houston base. It should not sound flowery, vague, or like a broker of subcontracted labor.
+SE Roofing should feel like a **direct, execution-focused, operator-owned commercial roofing subcontractor**. Copy leads with capability and control: in-house crews, self-performed work, standardized practices, safety, and responsiveness. It should not sound flowery, vague, like a general contractor, or like a broker of subcontracted labor. Do not lead with “nationwide” until that claim is verified.
 
 **Visual default in the confirmed print system:** navy and slate on white or light gray, often with a diagonal / cut-corner parallelogram (the framed lockup), short all-caps headline fragments, and gold-free pages. A navy→slate gradient on the icon mark is an acceptable treatment.
 
-**Voice:** confident and plainspoken. Headlines are short, punchy, all-caps sentence fragments (“EXECUTION-DRIVEN ROOFING,” “OPERATOR-OWNED”), not long marketing sentences.
+### Voice & copy
 
-**Taglines (as recorded 1 July 2026):**
+Voice: confident and plainspoken. Headlines are short, punchy, all-caps sentence fragments (“EXECUTION-DRIVEN ROOFING,” “OPERATOR-OWNED”), not long marketing sentences.
+
+**Company description** (per copy lead, pending Hayden confirmation):
+
+> SE Roofing is a commercial roofing subcontractor. We work as an extension of the general contractor’s team, with in-house crews and reliable execution on commercial, industrial, and government work.
+
+Do not use “contractor / subcontractor” or “commercial roofing contractor.” Never describe SE as a general contractor.
+
+**Short partnership lines:** “An extension of your team.” · “Your project. Our roofing expertise.” · “Built to support general contractors.”
+
+**Safer homepage heroes** (either is fine): “COMMERCIAL ROOFING. SELF PERFORMED.” or “COMMERCIAL ROOFING YOU CAN COUNT ON.”
+
+**Do not lead with, until verified:** “nationwide,” “Certified & Insured,” or “Guaranteed Results.” The recorded line “Trained Crews. Proven Materials. Guaranteed Results.” can stay in this inventory of existing copy, but it should not lead a page.
+
+**Finish or pull** from live pages: “66% Projects Completed,” “6+ Service Coverage,” and the gov site’s TBD UEI / CAGE / NAICS codes. Incomplete stats and placeholder registrations should not stay public.
+
+**Name and phone are pending Hayden.** The brand repo lists 281.965.9055; the marketing footer shows 713-814-5251; the gov site shows (281) 960-5459. Do not pick a phone or a public name (SE vs. Southeast) in this proposal.
+
+**Taglines (as recorded 1 July 2026, inventory only):**
 
 | Line | Where confirmed | Notes |
 |---|---|---|
@@ -56,13 +74,13 @@ SE Roofing should feel like a **direct, execution-focused, operator-owned commer
 | “Trained Crews. Proven Materials. Guaranteed Results.” | Website (July notes) | Same caveat |
 | “COMMERCIAL ROOFING. SELF PERFORMED.” | Current marketing homepage hero (24 November 2026) | Not in the July brand docs. Now the dominant web headline. |
 
-**Messaging pillars** (Capabilities Statement): self-performed / in-house execution; consistency at scale; safety and compliance; responsiveness (24/7, rapid response, emergency work); national reach, locally rooted.
+**Messaging pillars** (Capabilities Statement, as recorded): self-performed / in-house execution; consistency at scale; safety and compliance; responsiveness (24/7, rapid response, emergency work); national reach, locally rooted. Do not lead marketing with the “national reach / nationwide” pillar until it is verified.
 
 **Services** (site, still current): Commercial Roofing · New Construction · Overlay & Restoration · Tear Off & Replacement.
 
-**Boilerplate (short):** “SE Roofing is a commercial roofing contractor built on direct, in-house execution, delivering high-performance roofing systems across commercial, industrial, and government sectors.”
+**Boilerplate (short):** use the company description above. Do not reuse the older “commercial roofing contractor” boilerplate.
 
-**Contact facts as written in the brand repo:** phone 281.965.9055 · web roofingse.com · HQ 5617 Campbell Rd, Houston, Texas 77041. Live properties currently show **different** phone numbers (see `audit.md`).
+**Contact facts as written in the brand repo:** phone 281.965.9055 · web roofingse.com · HQ 5617 Campbell Rd, Houston, Texas 77041. Live properties currently show **different** phone numbers (see `audit.md`). Leave the official phone and public name for Hayden; do not choose one in this proposal.
 
 ---
 
@@ -239,7 +257,7 @@ From existing materials, not invented as a new system:
 
 - **Print:** letter-size capabilities slick; diagonal/cut-corner frame; navy footer with contact; all-caps headlines; icon row for “Why choose SE Roofing.”
 - **Marketing site:** Framer site, sticky white nav pill with the color lockup, dark “Contact Us” chip, orange primary CTAs with a circular arrow, full-bleed jobsite photography, a light dotted consult band, deep-teal footer. A hamburger appears at 390. Scroll-driven / sticky sections are used; a full-page screenshot misses mid-page content unless the view is scrolled. Motion was not formalized.
-- **Gov site:** generic top logo + slate bar + stacked body, USFCR and SAM badges. UEI / CAGE / NAICS are still “TBD.”
+- **Gov site:** generic top logo + slate bar + stacked body, USFCR and SAM badges. UEI / CAGE / NAICS are still “TBD” and should be finished or pulled from the live page.
 
 Do not copy Command’s invert dark mode, gold rules, or 18px cards into SE marketing work just because the companies share a parent.
 

@@ -39,7 +39,7 @@ The website design-system folder in the brand repo is still an empty checklist, 
 
 **BRANDING** — Either bring the marketing site back to navy/slate + Proxima/Museo, or formally adopt a web system (including whether orange is allowed) so print and web are not accidentally two brands. Add a white-knockout logo to `brand/logos/` if the hero treatment stays.
 
-**REFINEMENT** — Fix the overflow, the 403 on the canonical domain, the orange/white contrast (black type on `#D4762C` is 6.43:1), the empty/broken YouTube slot and sparse Projects page, and leftover incomplete bits (a “Careers” footer link; stats such as “66% Projects Completed” and “6+ Service Coverage” that still read unfinished).
+**REFINEMENT** — Fix the overflow, the 403 on the canonical domain, the orange/white contrast (black type on `#D4762C` is 6.43:1), the empty/broken YouTube slot and sparse Projects page, and leftover incomplete bits (a “Careers” footer link). **Finish or pull** stats such as “66% Projects Completed” and “6+ Service Coverage,” and the gov site’s TBD UEI / CAGE / NAICS — unfinished figures should not stay on a live page.
 
 ### 3. Command matches the brand; Estimate Command does not fully
 
@@ -60,9 +60,15 @@ Estimate Command (last push 10 July 2026) is SE-only and cites the same brand RE
 
 `seroofinggov.com` is a stock USFCR template (Bootstrap blues, system/Lato typography, UEI/CAGE/NAICS still “TBD”). It uses the official lockup correctly and mentions Roof Co Ventures, but it is not the brand system.
 
-**BRANDING** — Confirm the public name, the canonical domain, the public phone, and which tagline leads. Then update the brand repo and the sites so they say the same thing.
+**BRANDING** — Confirm the public name, the canonical domain, the public phone, and which tagline leads. Then update the brand repo and the sites so they say the same thing. The name and phone are pending Hayden; this proposal does not pick a phone among the three numbers above.
 
 **REFINEMENT** — Correct the written contrast note for slate (it passes AA at 5.93:1). Record or remove Minion Pro from the Capabilities Statement. Export a PNG/SVG of the diagonal lockup and a knockout mark. Import, or formally defer, the rest of the marketing library listed in `marketing/assets/README.md`. Fill or retire the empty `website/design-system/` checklist.
+
+### 5. Positioning and marketing copy need a cleanup
+
+Existing boilerplate still calls SE a “commercial roofing contractor” or “contractor / subcontractor.” SE is a **commercial roofing subcontractor**, never a general contractor (per copy lead, pending Hayden confirmation). The marketing site and July notes also lead, or can be read as leading, with unverified lines: “nationwide,” “Certified & Insured,” and “Guaranteed Results.”
+
+**REFINEMENT (copy)** — Use this positioning (per copy lead, pending Hayden confirmation): “SE Roofing is a commercial roofing subcontractor. We work as an extension of the general contractor’s team, with in-house crews and reliable execution on commercial, industrial, and government work.” Drop “contractor / subcontractor” and “commercial roofing contractor.” Do not lead with “nationwide,” “Certified & Insured,” or “Guaranteed Results” until they are verified. Finish or pull “66% Projects Completed,” “6+ Service Coverage,” and TBD UEI / CAGE / NAICS. Safer heroes: “COMMERCIAL ROOFING. SELF PERFORMED.” or “COMMERCIAL ROOFING YOU CAN COUNT ON.” Short partnership lines: “An extension of your team.” / “Your project. Our roofing expertise.” / “Built to support general contractors.” Leave the official phone and public name for Hayden.
 
 ---
 
@@ -71,8 +77,9 @@ Estimate Command (last push 10 July 2026) is SE-only and cites the same brand RE
 1. **BRANDING** — Pick a single type system. Proxima Nova + Museo Sans 900 is already confirmed by two designed print pieces. Decide the fate of NewScience/Rajdhani on bios and of Montserrat/Switzer on the website, and license the print faces for web if the site should match.
 2. **BRANDING** — Reconcile the live marketing look with the two-color brand. Either restyle the Framer site to navy/slate (no orange, official navy ink, official faces) or formally approve a web-only system — and put a knockout logo in the brand repo. Do not let print, web, and bios drift as three identities.
 3. **REFINEMENT** — Keep Command’s `seroofing` navy/steel/mist as the product source for this brand; leave Roof Co gold out of SE materials. Align or retire Estimate Command, whose mute and status hexes disagree with Command and in several cases fail AA.
-4. **REFINEMENT** — Fix shipping quality on the public sites: orange/white contrast (3.27:1), the 1440 “Backed by” overflow, 403s on roofingse.com, unfinished stats and project/video slots, and the gov template’s TBD fields and off-brand Bootstrap chrome.
-5. **BRANDING** — Confirm the public identity: SE vs. Southeast, which domain and phone are official, and which tagline leads (“YOU CAN COUNT ON” vs. “SELF PERFORMED.” vs. “Built by roofers…”).
+4. **REFINEMENT** — Fix shipping quality on the public sites: orange/white contrast (3.27:1), the 1440 “Backed by” overflow, 403s on roofingse.com, unfinished project/video slots, and the gov template’s off-brand Bootstrap chrome. **Finish or pull** “66% Projects Completed,” “6+ Service Coverage,” and TBD UEI / CAGE / NAICS.
+5. **BRANDING** — Confirm the public identity: SE vs. Southeast, which domain and phone are official, and which tagline leads (“YOU CAN COUNT ON” vs. “SELF PERFORMED.” vs. “Built by roofers…”). The name and phone are pending Hayden; do not pick a phone in this proposal.
+6. **REFINEMENT (copy)** — Position SE as a commercial roofing subcontractor, never a GC (per copy lead, pending Hayden confirmation). Drop “contractor / subcontractor” and “commercial roofing contractor.” Do not lead with “nationwide,” “Certified & Insured,” or “Guaranteed Results” until verified. Finish or pull the unfinished stats and TBD registrations noted above.
 
 ---
 
@@ -80,7 +87,7 @@ Estimate Command (last push 10 July 2026) is SE-only and cites the same brand RE
 
 1. Is **Proxima Nova + Museo Sans 900** the only type system? If yes, should bios and the Framer site be brought in line (and licensed for web)? If the site’s Montserrat/Switzer look is intentional, should that be documented as a web-only system?
 2. The marketing site’s orange `#D4762C` and near-navy inks are not the two-color logo palette. Should the site return to SE Navy / Slate Blue, or is the current Framer look approved as a web exception?
-3. Which public identity is official: the name (SE Roofing Solutions vs. Southeast Roofing Solutions), the canonical domain (roofingse.com is tagged as canonical but 403s here; seroofingteam.com is what loads), the phone (the repo, the marketing footer, and the gov site all disagree), and the lead tagline?
+3. Which public identity is official: the name (SE Roofing Solutions vs. Southeast Roofing Solutions), the canonical domain (roofingse.com is tagged as canonical but 403s here; seroofingteam.com is what loads), the phone (the repo, the marketing footer, and the gov site all disagree — do not pick one in this proposal), and the lead tagline? The copy lead also asks Hayden to confirm SE’s positioning as a commercial roofing subcontractor (never a GC).
 
 ---
 
