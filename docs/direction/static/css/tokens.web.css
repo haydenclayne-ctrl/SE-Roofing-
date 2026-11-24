@@ -1,0 +1,45 @@
+/* SE Roofing — web direction tokens (PROPOSAL, 2026-11-24, America/Chicago). Not approved.
+   Load AFTER design-system/tokens.css (which defines --se-navy, --se-slate, --se-white, --se-mist).
+   Only neutrals, spacing, type and layout are added here. No new brand colors. */
+:root{
+  /* Neutrals (support only, never as brand color) */
+  --se-paper:#F4F6F7;        /* light section ground. Navy on paper 11.02:1 */
+  --se-line:#C9D1D5;         /* hairlines/borders — non-text only */
+  --se-line-strong:#8FA1AA;  /* section rules — non-text only (2.68:1) */
+  --se-ink-2:#3A4E58;        /* secondary body text. 8.71:1 on white */
+  --se-on-navy-2:#C9D6DC;    /* secondary text on navy. 8.04:1 */
+
+  /* Accent — OFF by default (= navy). BRANDING (pending Hayden): .accent-orange flips it. */
+  --se-accent:var(--se-navy); --se-accent-ink:var(--se-white);
+
+  /* Fonts — swappable. Interim free Google Fonts until Proxima Nova / Museo Sans 900 are web-licensed.
+     To switch: change these two lines only. */
+  --se-font-body:"Figtree","Proxima Nova","Avenir Next","Segoe UI",Arial,sans-serif;     /* Proxima Nova stand-in */
+  --se-font-display:"Outfit","Museo Sans","Proxima Nova","Avenir Next",Arial,sans-serif; /* Museo Sans 900 stand-in */
+  --se-display-weight:800;
+
+  /* Headline case — DECISION (Jeremy, 2026-11-24): sentence case. Author headings in sentence case; never transform.
+     Uppercase is reserved for small labels/eyebrows, buttons and spec keys (--se-label-case). */
+  --se-heading-case:none;
+  --se-label-case:uppercase;
+
+  /* Type scale (desktop / phone ≤720 overrides below) */
+  --se-fs-h1:72px;  --se-lh-h1:1.02;
+  --se-fs-h2:44px;  --se-lh-h2:1.06;
+  --se-fs-h3:22px;  --se-lh-h3:1.2;
+  --se-fs-lead:21px;
+  --se-fs-body:18px; --se-lh-body:1.55;
+  --se-fs-small:15px;
+  --se-fs-label:13px; --se-ls-label:.14em;
+
+  /* Spacing (4px base) */
+  --s1:4px;--s2:8px;--s3:12px;--s4:16px;--s5:24px;--s6:32px;--s7:48px;--s8:64px;--s9:96px;--s10:128px;
+
+  /* Layout */
+  --gutter:24px; --margin:48px; --max:1240px; --header-h:76px;
+  --cut:14px;        /* cut-corner on primary buttons (echoes the parallelogram frame) */
+  --cut-photo:48px;  /* cut-corner on hero/case-study photos */
+}
+@media (max-width:1100px){:root{--margin:32px;--se-fs-h1:60px}}
+@media (max-width:720px){:root{--margin:20px;--gutter:16px;--header-h:64px;--se-fs-h1:42px;--se-lh-h1:1.04;--se-fs-h2:30px;--se-fs-h3:20px;--se-fs-lead:18px;--se-fs-body:17px;--cut-photo:28px}}
+.accent-orange{--se-accent:#D4762C;--se-accent-ink:#111111;} /* BRANDING (pending Hayden). #111 on #D4762C = 5.78:1 */

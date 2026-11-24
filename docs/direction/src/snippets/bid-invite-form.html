@@ -1,0 +1,20 @@
+<!-- contact.form — APPROVED by Z 2026-11-24: deck's five fields, then the optional bid-invite fields. Navy ground (.on-navy). Netlify Forms. -->
+<form class="form" name="bid-invite" method="POST" data-netlify="true" netlify-honeypot="company_url" aria-label="Invite SE Roofing to bid">
+  <p hidden><label>Leave blank <input name="company_url"></label></p>
+  <div class="field"><label for="nm">Name</label><input id="nm" name="name" autocomplete="name" required></div>
+  <div class="field"><label for="ph">Phone</label><input id="ph" name="phone" type="tel" autocomplete="tel"></div>
+  <div class="field"><label for="co">Company</label><input id="co" name="company" autocomplete="organization"></div>
+  <div class="field"><label for="em">Email</label><input id="em" name="email" type="email" autocomplete="email" required></div>
+  <div class="field full"><label for="msg">Message</label><textarea id="msg" name="message"></textarea></div>
+  <fieldset class="field full bidset"><legend class="label">Bid details <span class="req">(all optional)</span></legend>
+    <div class="form">
+      <div class="field full"><label for="pn">Project name <span class="req">(optional)</span></label><input id="pn" name="project"></div>
+      <div class="field"><label for="gc">General contractor <span class="req">(optional)</span></label><input id="gc" name="gc" autocomplete="off"></div>
+      <div class="field"><label for="bd">Bid due date <span class="req">(optional)</span></label><input id="bd" name="bid_date" type="date"></div>
+      <div class="field full"><label for="pl">Plans &amp; specs link <span class="req">(optional)</span></label><input id="pl" name="plans" type="url" inputmode="url" placeholder="https://" aria-describedby="pl-hint"><div class="hint" id="pl-hint">BuildingConnected, Procore, Dropbox or any share link.</div></div>
+      <fieldset class="field full" style="border:0;padding:0;margin:0"><legend class="label" style="color:#fff;margin-bottom:8px">Roofing scope <span class="req">(optional)</span></legend>
+        <div class="checks"><label><input type="checkbox" name="scope" value="commercial-roofing">Commercial roofing</label><label><input type="checkbox" name="scope" value="new-construction">New construction</label><label><input type="checkbox" name="scope" value="overlay-restoration">Overlay and restoration</label><label><input type="checkbox" name="scope" value="tear-off-replacement">Tear-off and replacement</label></div></fieldset>
+    </div>
+  </fieldset>
+  <div class="field full"><button class="btn btn-primary" type="submit">Invite us to bid <span class="arr" aria-hidden="true">→</span></button></div>
+</form>
